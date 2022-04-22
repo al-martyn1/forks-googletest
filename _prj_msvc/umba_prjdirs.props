@@ -1,0 +1,16 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project=".\props\umba_common.props" />
+  <Import Project=".\props\umba_local_common_prjdirs.props" />
+
+  <PropertyGroup>
+
+    <UMBA_INC_DIRS_EXTRA>$(ProjectDir)\..\googletest;$(ProjectDir)\..\googletest\include;$(ProjectDir)\..\googlemock;$(ProjectDir)\..\googlemock\include</UMBA_INC_DIRS_EXTRA>
+    <UMBA_INC_DIRS>$(UMBA_LOCAL_INC_DIRS);$(UMBA_INC_DIRS_EXTRA)</UMBA_INC_DIRS>
+
+    <UMBA_LIB_DIRS_EXTRA></UMBA_LIB_DIRS_EXTRA>
+    <UMBA_LIB_DIRS>$(UMBA_LOCAL_LIB_DIRS);$(UMBA_INC_DIRS_EXTRA)</UMBA_LIB_DIRS>
+
+  </PropertyGroup>
+
+</Project>
